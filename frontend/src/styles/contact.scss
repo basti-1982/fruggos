@@ -1,0 +1,68 @@
+.contact {
+  padding: 4rem 2rem;
+  text-align: center;
+
+  h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: #a86d1f;
+  }
+
+  p {
+    margin-bottom: 1.5rem;
+  }
+
+  .contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    max-width: 500px;
+    margin: 0 auto 2rem auto;
+
+    input,
+    textarea {
+      padding: 0.75rem;
+      border-radius: 6px;
+      border: 1px solid #ccc;
+      font-family: inherit;
+      font-size: 1rem;
+    }
+
+    button {
+      padding: 0.75rem;
+      background-color: #a86d1f;
+      color: white;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      font-weight: 600;
+    }
+
+    button:hover {
+      background-color: #925719;
+    }
+  }
+
+  .contact-info {
+    font-size: 1.1rem;
+
+    a {
+      color: #a86d1f;
+      text-decoration: none;
+
+      &.mail-button {
+        display: inline-block;
+        margin-top: 0.5rem;
+        background-color: #fff;
+        border: 1px solid #a86d1f;
+        padding: 0.5rem 1rem;
+        border-radius: 5px;
+        transition: background-color 0.2s;
+
+        &:hover {
+          background-color: #fae5cf;
+        }
+      }
+    }
+  }
+}

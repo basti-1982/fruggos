@@ -1,0 +1,50 @@
+.parents {
+  padding: 4rem 2rem;
+  max-width: 1000px;
+  margin: 0 auto;
+  h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 3rem;
+  }
+
+  .parents-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+    margin: 0 auto;
+  }
+
+  .parent-card {
+    background: linear-gradient(to right, #fceabb, #f8b500);
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 1.5rem;
+    width: 100%;
+    max-width: 400px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+    text-align: center;
+
+    img {
+      width: 100%;
+      border-radius: 10px;
+      margin-bottom: 1rem;
+      object-fit: cover;
+    }
+
+    img.secondary {
+      margin-top: 1rem;
+    }
+
+    h3 {
+      margin: 0.5rem 0;
+      color: #8c5c2b;
+    }
+
+    p {
+      font-size: 1rem;
+      line-height: 1.5;
+    }
+  }
+}

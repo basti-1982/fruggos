@@ -1,0 +1,35 @@
+.puppy-card {
+  max-width: 1000px;
+  margin: 0 auto;
+  background: linear-gradient(to right, #fceabb, #f8b500);
+  padding: 1.5rem;
+  border-radius: 8px;
+  img.puppy-image {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+  }
+}
+
+.puppy-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 2rem;
+  max-width: 800px;
+  margin: 0 auto;
+}
+.puppy-card h3 {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.puppy-card p {
+  margin-bottom: 1rem;
+}
+
+h2 {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 3rem;
+}
