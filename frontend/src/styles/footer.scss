@@ -1,0 +1,21 @@
+.footer {
+  text-align: center;
+  padding: 2rem;
+  background-color: rgba(255, 255, 255, 0.85);
+  margin-top: 3rem;
+  font-size: 0.9rem;
+
+  nav {
+    margin-top: 1rem;
+
+    a {
+      margin: 0 1rem;
+      color: #a86d1f;
+      text-decoration: none;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+}

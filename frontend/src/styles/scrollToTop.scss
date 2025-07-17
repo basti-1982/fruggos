@@ -1,0 +1,26 @@
+.scroll-to-top {
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  background-color: #f8b500;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  font-size: 1.5rem;
+  padding: 0.8rem 1rem;
+  cursor: pointer;
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.3s ease;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  z-index: 1000;
+
+  &.visible {
+    opacity: 1;
+    pointer-events: auto;
+  }
+
+  &:hover {
+    background-color: #e0a200;
+  }
+}

@@ -8,15 +8,14 @@ const router = express.Router();
 router.post("/", async (req, res) => {
   const { name, email, message } = req.body;
 
-const transporter = nodemailer.createTransport({
-  host: "smtp.office365.com",
-  port: 587,
-  secure: false, // TLS über STARTTLS
-  auth: {
-    user: process.env.EMAIL_USER,
-    pass: process.env.EMAIL_PASS,
-  },
-});
+  const transporter = nodemailer.createTransport({
+    service: "gmail",
+    auth: {
+      user: process.env.EMAIL_USER,
+      pass: process.env.EMAIL_PASS,
+    },
+  });
+
   const mailOptions = {
     from: process.env.EMAIL_USER,
     to: process.env.EMAIL_TO,
@@ -25,16 +24,10 @@ const transporter = nodemailer.createTransport({
   };
 
   try {
-    console.log("Versuche E-Mail zu senden...");
-    console.log("Von:", process.env.EMAIL_USER);
-    console.log("An:", process.env.EMAIL_TO);
-    console.log("Betreff:", mailOptions.subject);
-    console.log("Inhalt:", mailOptions.text);
     await transporter.sendMail(mailOptions);
     res.status(200).json({ success: true });
   } catch (error) {
-    console.error("Fehler beim Mailversand:");
-    console.error(error);
+    console.error("Fehler beim Mailversand:", error);
     res.status(500).json({ success: false, error: error.message });
   }
 });

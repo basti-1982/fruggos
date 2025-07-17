@@ -5,6 +5,10 @@ import mamaBall from "../assets/parents/friggaBall.JPG";
 
 const Parents = () => (
   <section className="parents">
+    <p className="section-intro">
+      Woher kommt eigentlich all die Flauschigkeit? Schau dir hier die Eltern
+      unserer kleinen Rasselbande an!
+    </p>
     <h2>Die Elterntiere</h2>
     <div className="parents-container">
       <div className="parent-card">

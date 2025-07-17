@@ -1,11 +1,16 @@
 .parents {
-  padding: 4rem 2rem;
+  background-color: rgba(255, 255, 255, 0.8); // milchiger Hintergrund
+  padding: 3rem 2rem;
   max-width: 1000px;
-  margin: 0 auto;
+  margin: 5rem auto;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+
   h2 {
     text-align: center;
     font-size: 2.5rem;
     margin-bottom: 3rem;
+    color: #333;
   }
 
   .parents-container {
@@ -13,17 +18,16 @@
     flex-wrap: wrap;
     gap: 2rem;
     justify-content: center;
-    margin: 0 auto;
   }
 
   .parent-card {
     background: linear-gradient(to right, #fceabb, #f8b500);
-    border: 1px solid #ddd;
+    border: none;
     border-radius: 10px;
     padding: 1.5rem;
-    width: 100%;
     max-width: 400px;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+    width: 100%;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
     text-align: center;
 
     img {
@@ -40,11 +44,21 @@
     h3 {
       margin: 0.5rem 0;
       color: #8c5c2b;
+      font-size: 1.3rem;
     }
 
     p {
       font-size: 1rem;
-      line-height: 1.5;
+      line-height: 1.6;
+      color: #333;
     }
   }
+}
+
+.section-intro {
+  text-align: center;
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+  color: #444;
+  font-style: italic;
 }
