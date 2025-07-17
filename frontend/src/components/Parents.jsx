@@ -1,6 +1,6 @@
 import "../styles/parents.scss";
 import papa from "../assets/parents/hugo.JPG";
-import mama from "../assets/parents/friggaBabys.JPG";
+import mama from "../assets/parents/friggaBabys.jpg";
 import mamaBall from "../assets/parents/friggaBall.JPG";
 
 const Parents = () => (
