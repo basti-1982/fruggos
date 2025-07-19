@@ -16,7 +16,7 @@ const puppies = [
     name: "Hellgrün",
     gender: "Rüde",
     features: "weiße Spitzen an den Pfoten, weißes Kinn, weiße Brust ",
-    reserved: "nein",
+    reserved: "ja",
     image: hellgruen,
   },
   {
