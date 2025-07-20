@@ -80,14 +80,14 @@ const puppies = [
     name: "Gelb",
     gender: "Hündin",
     features: "schwarzer Fleck auf dem Kopf",
-    reserved: "nein",
+    reserved: "ja",
     image: gelb,
   },
   {
     name: "Weiß",
     gender: "Hündin",
     features: "weiße Zehenspitzen & weißes Kinn",
-    reserved: "nein",
+    reserved: "ja",
     image: weiss,
   },
 ];
