@@ -43,8 +43,8 @@ const puppies = [
   {
     name: "Orange",
     gender: "Hündin",
-    features: "weißer Fleck am Bauchnabel",
-    reserved: "nein",
+    features: " Fleck am Bauchnabel",
+    reserved: "ja",
     image: orange,
   },
   {
