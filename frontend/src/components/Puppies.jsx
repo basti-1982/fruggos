@@ -30,7 +30,7 @@ const puppies = [
     name: "Pink",
     gender: "Hündin",
     features: "große weiße Brust, weiße Pfoten",
-    reserved: "nein",
+    reserved: "ja",
     image: pink,
   },
   {
